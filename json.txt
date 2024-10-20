@@ -1,0 +1,22 @@
+{
+  "Id": "Policy1723113421493",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1723113390922",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::tfbucket12",
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "157.119.208.104"
+        }
+      },
+      "Principal": "*"
+    }
+  ]
+}

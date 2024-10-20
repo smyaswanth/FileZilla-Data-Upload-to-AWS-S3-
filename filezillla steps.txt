@@ -1,0 +1,27 @@
+Steps:
+1.	Create a Public S3 bucket.
+2.	Secure the bucket by Creating  a bucket policy.
+•	List Bucket
+•	Get Bucket
+•	Put Object
+3.	Create a Transfer Server(SFTP)
+4.	Create a IAM(Identity Access Management Role) Role
+5.	Create a IAM Role
+•	In that we should give Trusted Entity has: AWS Transfer family
+•	Permissions: S3 FullAccess
+6.	Here that we are using IAM role for communication in between two AWS Resources .
+7.	Add User (generate public and private key using putty gen)
+8.	Give those details to the customer
+•	Username , Password and PEM File(private key file.
+9.	The Customer  should install the File Zilla App tool for connecting the aws.
+•	ServerName: Aws transfer server gives DNS name.
+•	Username: Ex: Pavan
+•	Password: Private Key
+10.	Connect.
+11.	We should the folders or prefixes in the file zilla tool.
+12.	The file zilla tool will helps us the client to operations like putobject and getobject.
+13.	Whenever we leave the filezilla tool we need to logout the file zilla tool respectively.
+14.	The below we are showing the steps of creating and managing the tools and buckets in the aws. 
+
+
+
